@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from 'react';
+import {Route, Switch} from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import MainLayout from './components/Common/MainLayout/MainLayout';
+import JsonFormatter from './containers/JsonFormatter/JsonFormater';
+import { ROUTES }  from './constants';
+
+class App extends Component {
+  render() {
+    return (
+      <MainLayout>
+        <Switch>
+          <Route path={ROUTES.home.path} exact component={JsonFormatter} />
+        </Switch>
+      </MainLayout>
+    )
+  }
 }
 
 export default App;
