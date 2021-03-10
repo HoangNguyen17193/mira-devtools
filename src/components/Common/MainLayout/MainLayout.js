@@ -6,6 +6,7 @@ import 'antd/dist/antd.css';
 import classes from './MainLayout.module.scss';
 import {ROUTES} from '../../../constants';
 import {FundOutlined, CloudServerOutlined, ToolOutlined, ControlOutlined} from '@ant-design/icons';
+import './MainLayout.scss';
 
 const {Header, Content, Footer, Sider} = Layout;
 
@@ -29,7 +30,7 @@ class MainLayout extends Component {
         <Header className={classes.Header}>
           Mira Devtools
         </Header>
-        <Layout className="site-layout">
+        <Layout className="site-layout MainLayout">
           <Sider width={230} collapsible collapsed={this.state.collapsed} onCollapse={this.onCollapse}>
             <Menu theme="dark" mode="inline" selectedKeys={[key]}>
               <Menu.Item icon={<CloudServerOutlined/>} key={ROUTES.home.key}>

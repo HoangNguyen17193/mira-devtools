@@ -24,8 +24,8 @@
 }
 
 .Content {
-  background: #fff;
-  padding: 24px;
+  background: $content-background-color;
+  padding: 10px;
   height: 100%;
   text-align: center;
   overflow: auto;
