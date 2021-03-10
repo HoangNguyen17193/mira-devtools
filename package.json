@@ -18,11 +18,11 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "export BROWSER=none && react-scripts start",
+    "start": "export PORT=7777 BROWSER=none && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "electron-dev": "ELECTRON_START_URL=http://localhost:3001 electron ."
+    "electron:dev": "ELECTRON_START_URL=http://localhost:7777 electron ."
   },
   "eslintConfig": {
     "extends": [
