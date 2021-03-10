@@ -1,0 +1,30 @@
+@import '../../../styles/variables';
+
+.MainLayout {
+  background-color: $background-color;
+  &.ant-layout {
+    .ant-layout-sider {
+      &.ant-layout-sider-dark {
+        background-color: $background-color;
+      }
+      .ant-menu{
+        &.ant-menu-dark {
+          background-color: $background-color;
+        }
+        .ant-menu-item {
+          &.ant-menu-item-selected {
+            background-color: unset;
+            color: $highlight-color;
+            .anticon {
+              color: $highlight-color;
+            }
+            > span > a {
+              color: $highlight-color;
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
