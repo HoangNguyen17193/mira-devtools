@@ -25,6 +25,13 @@
           }
         }
       }
+      .ant-layout-sider-trigger {
+        background-color: $hover-color;
+        color: rgba(255, 255, 255, 0.65);
+        &:hover {
+          color: #ffffff;
+        }
+      }
     }
   }
 }
