@@ -5,6 +5,8 @@
   color: #fff;
   font-size: 1.2rem;
   font-weight: bold;
+  height: 50px;
+  line-height: 50px;
   .HeaderMenu {
     background: $header;
   }
@@ -16,8 +18,8 @@
 }
 
 .ContentWrapper {
-  padding: 0;
-  height: calc(100vh - 234px);
+  padding: 30px 30px 50px 30px;
+  height: calc(100vh - 50px);
   margin: auto;
   width: 100%;
   overflow: hidden;
@@ -41,7 +43,7 @@
 }
 
 @media (min-width: 1440px) {
-  .ContentWrapper {
-    max-width: 1240px;
-  }
+  //.ContentWrapper {
+  //  max-width: 1240px;
+  //}
 }
