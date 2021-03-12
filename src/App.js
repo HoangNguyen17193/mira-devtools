@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {Route, Switch} from 'react-router-dom';
 
 import MainLayout from './components/Common/MainLayout/MainLayout';
-import JsonFormatter from './containers/JsonFormatter/JsonFormater';
+import JsonFormatter from './containers/JsonFormatter/JsonFormatter';
 import { ROUTES }  from './constants';
 
 class App extends Component {

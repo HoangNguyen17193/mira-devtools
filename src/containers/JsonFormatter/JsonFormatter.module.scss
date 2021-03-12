@@ -1,0 +1,14 @@
+@import '../../styles/variables';
+
+.JsonFormatter {
+  height: 100%;
+}
+.InputContainer {
+  padding: 20px;
+}
+.Input {
+  background-color: $content-background-color;
+  color: #fff;
+  border-color: $background-color;
+  border-radius: 10px;
+}
