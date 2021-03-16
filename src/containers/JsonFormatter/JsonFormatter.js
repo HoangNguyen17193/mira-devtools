@@ -20,7 +20,7 @@ export default () => {
       <Col className={classes.InputContainer} span={12}>
         <TextArea onChange={onInputChanged} className={classes.Input} />
       </Col>
-      <Col span={12}>
+      <Col className={classes.JsonViewContainer} span={12}>
         <JsonView jsonString={jsonString}/>
       </Col>
     </Row>

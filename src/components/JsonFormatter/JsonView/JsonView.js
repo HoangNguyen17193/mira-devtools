@@ -5,22 +5,28 @@ import { isValidJsonString } from '../../../utils';
 
 import classes from './JsonView.module.scss';
 
+const customMaterialDark = {
+  ...atomDark,
+  "code[class*=\"language-\"]": {
+    ...atomDark["code[class*=\"language-\"]"],
+    "background": "#323841",
+  },
+  "pre[class*=\"language-\"]": {
+    ...atomDark["pre[class*=\"language-\"]"],
+    "background": "#323841",
+    "borderRadius": "10px"
+  }
+}
 const JsonView = (props) => {
   const jsonString = props.jsonString;
+  if(!jsonString) {
+    return (
+      <div className={classes.JsonView}>
+      </div>
+    )
+  }
   const result = isValidJsonString(jsonString) ? JSON.stringify(JSON.parse(jsonString), null, 4)
     : 'Syntax Error';
-  const customMaterialDark = {
-    ...atomDark,
-    "code[class*=\"language-\"]": {
-      ...atomDark["code[class*=\"language-\"]"],
-      "background": "#323841",
-    },
-    "pre[class*=\"language-\"]": {
-      ...atomDark["pre[class*=\"language-\"]"],
-      "background": "#323841",
-      "border-radius": "10px"
-    }
-  }
   return (
     <div className={classes.JsonView}>
       <SyntaxHighlighter language="json" style={customMaterialDark} showLineNumbers={true}>
