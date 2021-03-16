@@ -1,5 +1,5 @@
 @import '../../../styles/variables';
-
+$sidebar-color : $hover-color;
 .MainLayout {
   background-color: $background-color;
   &.ant-layout {
@@ -26,10 +26,11 @@
         }
       }
       .ant-layout-sider-trigger {
-        background-color: $hover-color;
+        background-color: $background-color;
         color: rgba(255, 255, 255, 0.65);
         &:hover {
           color: #ffffff;
+          background-color: $hover-color;
         }
       }
     }

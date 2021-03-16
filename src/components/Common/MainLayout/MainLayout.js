@@ -54,10 +54,10 @@ class MainLayout extends Component {
             <div className={classes.Content}>
               {this.props.children}
             </div>
+            <Footer className={classes.Footer}>Created by <b>Hoang Nguyen</b> with <HeartFilled
+              className={classes.HeartIcon}/></Footer>
           </Content>
         </Layout>
-        {/*<Footer className={classes.Footer}>Created by <b>Hoang Nguyen</b> with <HeartFilled*/}
-        {/*  className={classes.HeartIcon}/></Footer>*/}
       </Layout>
     )
   }
