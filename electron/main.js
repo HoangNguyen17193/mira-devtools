@@ -6,10 +6,10 @@ let mainWindow;
 
 function createWindow() {
   mainWindow = new BrowserWindow({
-    width: 1024,
-    height: 768,
-    minWidth: 800,
-    minHeight: 600
+    width: 1280,
+    height: 800,
+    minWidth: 1024,
+    minHeight: 768
   });
   const startURL = isDev ? 'http://localhost:7777' : `file://${path.join(__dirname, '../build/index.html')}`;
 
