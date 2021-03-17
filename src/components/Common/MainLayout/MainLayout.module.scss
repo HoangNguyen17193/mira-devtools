@@ -29,7 +29,7 @@
 .Content {
   background: $background-color;
   padding: 3px;
-  height: 100%;
+  height: calc(100% - 60px);
   text-align: center;
   overflow: auto;
   color: #ffffff;
