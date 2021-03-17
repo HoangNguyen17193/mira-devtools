@@ -9,7 +9,9 @@ function createWindow() {
     width: 1280,
     height: 800,
     minWidth: 1024,
-    minHeight: 768
+    minHeight: 768,
+    titleBarStyle: 'hiddenInset',
+    frame: true
   });
   const startURL = isDev ? 'http://localhost:7777' : `file://${path.join(__dirname, '../build/index.html')}`;
 
