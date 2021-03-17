@@ -1,5 +1,12 @@
+@import '../../styles/variables';
 .JsonFormatter {
   textarea.ant-input {
     height: 100%;
+  }
+  .gutter.gutter-horizontal {
+    cursor: ew-resize;
+    background-color: $hover-color;
+    margin-top: 30px;
+    margin-bottom: 20px;
   }
 }

@@ -17,3 +17,8 @@
   border-color: $background-color;
   border-radius: 10px;
 }
+.SplitContainer {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
