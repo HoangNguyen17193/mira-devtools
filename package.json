@@ -27,6 +27,7 @@
     "dayjs": "^1.10.4",
     "electron-is-dev": "^2.0.0",
     "install": "^0.13.0",
+    "jwt-decode": "^3.1.2",
     "lodash": "^4.17.21",
     "node-sass": "^5.0.0",
     "react": "^17.0.1",
@@ -37,6 +38,7 @@
     "react-split": "^2.0.9",
     "react-syntax-highlighter": "^15.4.3",
     "redux": "^4.0.5",
+    "uuid": "^8.3.2",
     "web-vitals": "^1.0.1"
   },
   "devDependencies": {
