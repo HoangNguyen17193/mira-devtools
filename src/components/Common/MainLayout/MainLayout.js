@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {NavLink, withRouter} from "react-router-dom";
-import {Layout, Menu} from 'antd';
+import {Layout, Menu, Breadcrumb} from 'antd';
 import 'antd/dist/antd.css';
 import classes from './MainLayout.module.scss';
 import {ROUTES} from '../../../utils/constants';
@@ -59,13 +59,18 @@ class MainLayout extends Component {
               </Menu.Item>
             </Menu>
           </Sider>
-          <Content className={classes.ContentWrapper}>
-            <div className={classes.Content}>
-              {this.props.children}
-            </div>
-            <Footer className={classes.Footer}>Created by <b>Hoang Nguyen</b> with <HeartFilled
-              className={classes.HeartIcon}/></Footer>
-          </Content>
+            <Content className={classes.ContentWrapper}>
+              <div className={classes.Actions}>
+                <div className={classes.Title}>
+                  {route.name}
+                </div>
+              </div>
+              <div className={classes.Content}>
+                {this.props.children}
+              </div>
+              <Footer className={classes.Footer}>Created by <b>Hoang Nguyen</b> with <HeartFilled
+                className={classes.HeartIcon}/></Footer>
+            </Content>
         </Layout>
       </Layout>
     )
