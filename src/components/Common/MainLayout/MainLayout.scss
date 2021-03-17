@@ -9,6 +9,7 @@ $sidebar-color : $hover-color;
         background-color: $background-color;
       }
       .ant-menu{
+        border-right: 1px solid $hover-color;
         &.ant-menu-dark {
           background-color: $background-color;
         }
