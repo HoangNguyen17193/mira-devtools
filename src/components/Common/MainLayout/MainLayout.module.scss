@@ -19,8 +19,8 @@
 }
 
 .ContentWrapper {
-  padding: 30px 30px 50px 30px;
-  height: calc(100vh - 50px);
+  padding: 10px;
+  height: calc(100vh - 40px);
   margin: auto;
   width: 100%;
   overflow: hidden;
@@ -28,10 +28,11 @@
 
 .Content {
   background: $background-color;
-  padding: 10px;
-  height: 100%;
+  padding: 3px;
+  height: calc(100% - 60px);
   text-align: center;
   overflow: auto;
+  color: #ffffff;
 }
 
 .Footer {
@@ -43,6 +44,18 @@
 
 .HeartIcon {
   color: #f5222d;
+}
+
+.Actions {
+  padding-left: 15px;
+  padding-top: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.Title {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 @media (min-width: 1440px) {

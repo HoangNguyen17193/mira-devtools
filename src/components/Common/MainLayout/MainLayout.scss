@@ -4,6 +4,7 @@ $sidebar-color : $hover-color;
   background-color: $background-color;
   &.ant-layout {
     .ant-layout-sider {
+      border-right: 1px solid $hover-color;
       &.ant-layout-sider-dark {
         background-color: $background-color;
       }
@@ -26,6 +27,7 @@ $sidebar-color : $hover-color;
         }
       }
       .ant-layout-sider-trigger {
+        border-right: 1px solid $hover-color;
         background-color: $background-color;
         color: rgba(255, 255, 255, 0.65);
         &:hover {

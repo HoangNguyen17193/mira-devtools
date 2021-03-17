@@ -1,21 +1,25 @@
-import React from "react";
+import React from 'react';
 
 const ROUTES = {
   Home: {
     path: '/',
-    key: 'JsonFormatter'
+    key: 'JsonFormatter',
+    name: 'Json Formatter'
   },
   JWTParser: {
     path: '/jwt-parser',
-    key: 'JWTParser'
+    key: 'JWTParser',
+    name: 'JWT Parser'
   },
   UUIDGenerator: {
     path: '/uuid-generator',
-    key: 'UUIDGenerator'
+    key: 'UUIDGenerator',
+    name: 'UUID Generator'
   },
   UnixTimeConverter: {
     path: '/unix-time-converter',
-    key: 'UnixTimeConverter'
+    key: 'UnixTimeConverter',
+    name: 'UnixTime Converter'
   }
 };
 

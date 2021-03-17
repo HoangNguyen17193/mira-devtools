@@ -1,20 +1,20 @@
 import React from 'react';
 import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter';
-import { materialDark, atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import { isValidJsonString } from '../../../utils';
 
 import classes from './JsonView.module.scss';
 
 const customMaterialDark = {
   ...atomDark,
-  "code[class*=\"language-\"]": {
-    ...atomDark["code[class*=\"language-\"]"],
-    "background": "#323841",
+  'code[class*=\'language-\']': {
+    ...atomDark['code[class*=\'language-\']'],
+    'background': '#323841',
   },
-  "pre[class*=\"language-\"]": {
-    ...atomDark["pre[class*=\"language-\"]"],
-    "background": "#323841",
-    "borderRadius": "10px"
+  'pre[class*=\'language-\']': {
+    ...atomDark['pre[class*=\'language-\']'],
+    'background': '#323841',
+    'borderRadius': '10px'
   }
 }
 const JsonView = (props) => {
@@ -29,7 +29,7 @@ const JsonView = (props) => {
     : 'Syntax Error';
   return (
     <div className={classes.JsonView}>
-      <SyntaxHighlighter language="json" style={customMaterialDark} showLineNumbers={true}>
+      <SyntaxHighlighter language='json' style={customMaterialDark} showLineNumbers={true}>
         {result || ''}
       </SyntaxHighlighter>
     </div>
