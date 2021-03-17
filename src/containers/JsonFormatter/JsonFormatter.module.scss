@@ -4,18 +4,21 @@
   height: 100%;
 }
 .InputContainer {
+  background-color: $content-background-color;
+  border-radius: 10px;
   margin-top: 10px;
   padding: 10px;
 }
 .JsonViewContainer {
+  background-color: $content-background-color;
+  border-radius: 10px;
   margin-top: 10px;
   padding: 10px;
 }
 .Input {
   background-color: $content-background-color;
   color: #fff;
-  border-color: $background-color;
-  border-radius: 10px;
+  border-color: $content-background-color;
 }
 .SplitContainer {
   display: flex;
