@@ -3,7 +3,7 @@ import {NavLink, withRouter} from "react-router-dom";
 import {Layout, Menu} from 'antd';
 import 'antd/dist/antd.css';
 import classes from './MainLayout.module.scss';
-import {ROUTES} from '../../../constants';
+import {ROUTES} from '../../../utils/constants';
 import {
   CodeOutlined,
   ClockCircleOutlined,
@@ -28,7 +28,7 @@ class MainLayout extends Component {
   render() {
     const pathName = this.props.location.pathname;
     const route = Object.values(ROUTES).find(route => pathName === route.path);
-    const key = route ? route.key : ROUTES.home.key;
+    const key = route ? route.key : ROUTES.Home.key;
     return (
       <Layout className={classes.MainLayout}>
         <Header className={classes.Header}>
@@ -37,23 +37,23 @@ class MainLayout extends Component {
         <Layout className="site-layout MainLayout">
           <Sider width={200} collapsible collapsed={this.state.collapsed} onCollapse={this.onCollapse}>
             <Menu theme="dark" mode="inline" selectedKeys={[key]}>
-              <Menu.Item icon={<CodeOutlined/>} key={ROUTES.home.key}>
-                <NavLink exact to={ROUTES.home.path}>
+              <Menu.Item icon={<CodeOutlined/>} key={ROUTES.Home.key}>
+                <NavLink exact to={ROUTES.Home.path}>
                   JSON Parser
                 </NavLink>
               </Menu.Item>
-              <Menu.Item icon={<UnlockOutlined/>} key="">
-                <NavLink to="">
+              <Menu.Item icon={<UnlockOutlined/>} key={ROUTES.JWTParser.key}>
+                <NavLink to={ROUTES.JWTParser.path}>
                   JWT Parser
                 </NavLink>
               </Menu.Item>
-              <Menu.Item icon={<UndoOutlined/>} key="">
-                <NavLink to="">
+              <Menu.Item icon={<UndoOutlined/>} key={ROUTES.UUIDGenerator.key}>
+                <NavLink to={ROUTES.UUIDGenerator.path}>
                   UUID generator
                 </NavLink>
               </Menu.Item>
-              <Menu.Item icon={<ClockCircleOutlined/>} key="">
-                <NavLink to="">
+              <Menu.Item icon={<ClockCircleOutlined/>} key={ROUTES.UnixTimeConverter.key}>
+                <NavLink to={ROUTES.UnixTimeConverter.path}>
                   UnixTime Converter
                 </NavLink>
               </Menu.Item>
