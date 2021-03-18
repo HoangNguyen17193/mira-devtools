@@ -1,6 +1,7 @@
-import React, { useState } from "react";
-import { Row, Col, Input } from 'antd';
-import { debounce } from 'lodash';
+import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { Input } from 'antd';
+import { setJsonString } from '../../store/JSONFormatter/JSONFormatterAction';
 
 import Split from 'react-split'
 
@@ -10,31 +11,31 @@ import './JsonFormatter.scss';
 
 const {TextArea} = Input;
 
+function JsonFormatter(){
+  const jsonString = useSelector(state => state.JSONFormatter.jsonString);
+  const dispatch = useDispatch();
 
-export default () => {
-  const [jsonString, setJsonString] = useState('');
-  const onInputChanged = debounce((e) => {
-    setJsonString(e.target.value)
-  }, 400);
-
+  const onInputChanged = (e) => {
+    dispatch(setJsonString(e.target.value));
+  }
   return (
     <div className={`JsonFormatter ${classes.JsonFormatter}`}>
       <Split className={classes.SplitContainer}
-             sizes={[50, 50]}
+             sizes={[40, 60]}
              cursor="col-resize"
              gutterSize={10}
              minSize={300}
              expandToMin={true}
       >
-        <div className={classes.InputContainer} span={12}>
-          <TextArea onChange={onInputChanged} className={classes.Input} />
+        <div className={classes.InputContainer}>
+          <TextArea value={jsonString} onChange={onInputChanged} className={classes.Input} />
         </div>
-        <div className={classes.JsonViewContainer} span={12}>
+        <div className={classes.JsonViewContainer}>
           <JsonView jsonString={jsonString}/>
         </div>
       </Split>
-
     </div>
-
   );
 };
+
+export default JsonFormatter;
