@@ -29,13 +29,14 @@
 .Content {
   background: $background-color;
   padding: 3px;
-  height: calc(100% - 60px);
+  height: calc(100% - 75px);
   text-align: center;
   overflow: auto;
   color: #ffffff;
 }
 
 .Footer {
+  height: 35px;
   text-align: center;
   background-color: $background-color;
   color: #ffffff;
