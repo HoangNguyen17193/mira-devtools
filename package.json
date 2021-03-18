@@ -48,7 +48,7 @@
     "wait-on": "^5.2.1"
   },
   "build": {
-    "appId": "com.tino.-  app",
+    "appId": "com.tino.mira-devtools",
     "productName": "Mira Devtools",
     "copyright": "Copyright © 2021 ${author}",
     "mac": {
