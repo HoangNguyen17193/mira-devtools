@@ -3,8 +3,8 @@
 .Header {
   background: $header;
   color: #fff;
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-size: 1rem;
+  font-weight: 500;
   height: 40px;
   line-height: 40px;
   text-align: center;
@@ -29,13 +29,14 @@
 .Content {
   background: $background-color;
   padding: 3px;
-  height: calc(100% - 60px);
+  height: calc(100% - 75px);
   text-align: center;
   overflow: auto;
   color: #ffffff;
 }
 
 .Footer {
+  height: 35px;
   text-align: center;
   background-color: $background-color;
   color: #ffffff;

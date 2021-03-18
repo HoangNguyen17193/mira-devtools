@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import {isEmpty} from 'lodash';
 import {NavLink, withRouter} from 'react-router-dom';
 import {Layout, Menu} from 'antd';
 import 'antd/dist/antd.css';
@@ -29,8 +30,9 @@ class MainLayout extends Component {
 
   render() {
     const pathName = this.props.location.pathname;
-    const route = Object.values(ROUTES).find(route => pathName === route.path);
-    const key = route ? route.key : ROUTES.Home.key;
+    const activeRoute = Object.values(ROUTES).find(route => pathName === route.path);
+    const route = !isEmpty(activeRoute) ? activeRoute : ROUTES.Home;
+    const key = route.key;
     return (
       <Layout className={classes.MainLayout}>
         <Header className={classes.Header}>

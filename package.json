@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "private": true,
   "author": {
-    "name": "Hoang Nguyen",
+    "name": "Hoang Nguyen(Tino)",
     "email": "hoangnh17193@gmail.com"
   },
   "scripts": {
@@ -48,11 +48,14 @@
     "wait-on": "^5.2.1"
   },
   "build": {
-    "appId": "com.tino.-  app",
+    "appId": "com.tino.mira-devtools",
     "productName": "Mira Devtools",
     "copyright": "Copyright © 2021 ${author}",
     "mac": {
       "category": "public.app-category.utilities"
+    },
+    "win": {
+
     },
     "files": [
       "build/**/*",
