@@ -33,6 +33,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-json-view": "^1.21.3",
+    "react-redux": "^7.2.2",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "react-split": "^2.0.9",
@@ -54,9 +55,7 @@
     "mac": {
       "category": "public.app-category.utilities"
     },
-    "win": {
-
-    },
+    "win": {},
     "files": [
       "build/**/*",
       "node_modules/**/*",
