@@ -1,0 +1,20 @@
+@import '../../../styles/variables';
+
+.JWTParserResult {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  height: 100%;
+}
+
+.JWTParserResultItem {
+  padding: 10px;
+  margin-top: 10px;
+  background-color: $content-background-color;
+  height: 50%;
+  border-radius: 10px;
+}
+
+.Header {
+  color: #fff;
+}
