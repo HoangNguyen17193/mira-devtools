@@ -5,7 +5,7 @@ const initialState = {
 };
 
 
-const appConfigReducer = (state = initialState, action) => {
+const JSONFormatterReducer = (state = initialState, action) => {
   switch (action.type) {
     case actionTypes.SET_JSON_STRING: {
       return {
@@ -19,4 +19,4 @@ const appConfigReducer = (state = initialState, action) => {
   }
 };
 
-export default appConfigReducer;
+export default JSONFormatterReducer;
