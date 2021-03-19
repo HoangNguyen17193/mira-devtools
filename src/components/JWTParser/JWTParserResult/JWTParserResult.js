@@ -7,38 +7,35 @@ import JsonView from "../../JsonFormatter/JsonView/JsonView";
 function parseToken(token) {
   if(isEmpty(token)) {
     return {
-      header: {},
-      payload: {}
+      header: '{}',
+      payload: '{}'
     }
   }
   try {
     const payload = jwtDecode(token);
-    console.log(payload);
     const header = jwtDecode(token, { header: true });
     return {
-      header,
-      payload
+      header: JSON.stringify(header, null, 4),
+      payload: JSON.stringify(payload, null, 4)
     }
   } catch (e) {
-    return {
-      header: {},
-      payload: {}
-    }
+    return {}
   }
 }
 export default (props) => {
   const {header, payload} = parseToken(props.token);
+  const InvalidTokenView = <div className={classes.InvalidTokenLabel}>Invalid Token</div>;
+  const HeaderView = header ? <JsonView jsonString={header} /> : InvalidTokenView;
+  const PayloadView = payload ? <JsonView jsonString={payload} /> : InvalidTokenView;
   return (
     <div className={classes.JWTParserResult}>
         <div className={classes.JWTParserResultItem}>
           <h3 className={classes.Header}>Header</h3>
-          <JsonView
-            jsonString={JSON.stringify(header, null, 4)}
-          />
+          {HeaderView}
         </div>
         <div className={classes.JWTParserResultItem}>
           <h3 className={classes.Header}>Payload</h3>
-          <JsonView jsonString={JSON.stringify(payload, null, 4)} />
+          {PayloadView}
         </div>
     </div>
   )
