@@ -3,7 +3,6 @@ import jwtDecode from 'jwt-decode'
 import {isEmpty} from 'lodash';
 import classes from './JWTParserResult.module.scss';
 import JsonView from "../../JsonFormatter/JsonView/JsonView";
-import SplitContainer from "../../Common/SplitContainer/SplitContainer";
 
 function parseToken(token) {
   if(isEmpty(token)) {

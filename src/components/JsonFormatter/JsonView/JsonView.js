@@ -7,12 +7,12 @@ import classes from './JsonView.module.scss';
 
 const customStyle = {
   ...atomDark,
-  'code[class*=\"language-\"]': {
-    ...atomDark['code[class*=\"language-\"]'],
+  'code[class*="language-"]': {
+    ...atomDark['code[class*="language-"]'],
     'background': '#323841',
   },
-  'pre[class*=\"language-\"]': {
-    ...atomDark['pre[class*=\"language-\"]'],
+  'pre[class*="language-"]': {
+    ...atomDark['pre[class*="language-"]'],
     'background': '#323841',
     'borderRadius': '10px'
   }
