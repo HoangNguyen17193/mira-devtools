@@ -1,0 +1,10 @@
+@import '../../../styles/variables';
+
+.SplitContainer {
+  .gutter.gutter-horizontal {
+    cursor: ew-resize;
+    background-color: $hover-color;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
