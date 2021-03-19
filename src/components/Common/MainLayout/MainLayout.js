@@ -10,7 +10,7 @@ import {
   ClockCircleOutlined,
   HeartFilled,
   UnlockOutlined,
-  UndoOutlined
+  RedoOutlined
 } from '@ant-design/icons';
 import './MainLayout.scss';
 
@@ -51,7 +51,7 @@ class MainLayout extends Component {
                   JWT Parser
                 </NavLink>
               </Menu.Item>
-              <Menu.Item icon={<UndoOutlined/>} key={ROUTES.UUIDGenerator.key}>
+              <Menu.Item icon={<RedoOutlined/>} key={ROUTES.UUIDGenerator.key}>
                 <NavLink to={ROUTES.UUIDGenerator.path}>
                   UUID generator
                 </NavLink>
