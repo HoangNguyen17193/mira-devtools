@@ -3,8 +3,11 @@
 .SplitContainer {
   .gutter.gutter-horizontal {
     cursor: ew-resize;
-    background-color: $hover-color;
+    background-color: $background-color;
     margin-top: 10px;
     margin-bottom: 10px;
+    &:hover {
+      background-color: $hover-color;
+    }
   }
 }
