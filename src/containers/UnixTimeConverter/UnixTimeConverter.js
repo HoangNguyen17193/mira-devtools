@@ -29,7 +29,7 @@ export default () => {
       <SplitContainer sizes={[40, 60]}>
         <div className={classes.Container}>
           <label>Enter a timestamp to convert it to a date and time:</label>
-          <InputNumber type='number' placeholder='Enter a timestamp' className={classes.Input} value={value} onChange={changeValue}/>
+          <InputNumber type='number' className={classes.Input} value={value} onChange={changeValue}/>
           <Radio.Group onChange={changeType} value={type}>
             <Radio value={TYPE.millisecond}>
               Milliseconds since epoch
