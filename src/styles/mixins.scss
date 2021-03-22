@@ -1,0 +1,11 @@
+@import './variables';
+
+@mixin input() {
+   margin: 20px 0;
+   background-color: $primary-color;
+   color: #fff;
+   border: none;
+   border-radius: 30px;
+   height: 40px;
+   font-size: 1rem;
+ }
