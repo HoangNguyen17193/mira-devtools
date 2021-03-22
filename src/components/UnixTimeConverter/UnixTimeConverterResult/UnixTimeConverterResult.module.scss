@@ -1,20 +1,15 @@
 @import '../../../styles/variables';
 @import '../../../styles/mixins';
 
-.UUIDCard {
-  margin: 20px 50px;
+.UnixTimeConverterResult {
+  height: 100%;
   background-color: $content-background-color;
   color: #fff;
-  border-radius: 10px;
+  padding:0 10px;
 }
-
 .Input {
+  @include input;
   &:disabled {
     @include input;
   }
-
-}
-
-.Button {
-  margin: 10px
 }

@@ -1,0 +1,17 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.UnixTimeConverter {
+  height: 100%;
+  margin-top: 10px;
+}
+.Container {
+  padding: 20px;
+  background-color: $content-background-color;
+  border-radius: 10px;
+  text-align: left;
+}
+.Input {
+  @include input;
+  width: 100%;
+}
