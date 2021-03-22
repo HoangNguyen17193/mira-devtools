@@ -1,16 +1,20 @@
 import actionTypes from './UnixTimeConverterActionTypes';
 
-
-const setTime = (value = 0, type = actionTypes.TYPE.millisecond) => {
+const setTimeValue = (value = 0) => {
   return {
-    type: actionTypes.SET_JSON_STRING,
-    time: {
-      type,
-      value
-    }
+    type: actionTypes.SET_TIME_VALUE,
+    value
+  }
+};
+
+const setTimeType = (timeType = actionTypes.TYPE.millisecond) => {
+  return {
+    type: actionTypes.SET_TIME_TYPE,
+    timeType
   }
 };
 
 export {
-  setTime
+  setTimeValue,
+  setTimeType
 }

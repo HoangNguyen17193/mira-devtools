@@ -1,10 +1,13 @@
-const SET_TIME = 'SET_TIME';
+const SET_TIME_VALUE = 'SET_TIME_VALUE';
+const SET_TIME_TYPE = 'SET_TIME_TYPE'
+
 const TYPE = {
   second: 'second',
   millisecond: 'millisecond'
 }
 
 export default {
-  SET_TIME,
+  SET_TIME_VALUE,
+  SET_TIME_TYPE,
   TYPE
 }
