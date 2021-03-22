@@ -5,12 +5,11 @@ const {TYPE} = actionTypes;
 const initialState = {
   time: {
     type: TYPE.millisecond,
-    value: 0
+    value: ''
   },
 };
 
 const UnixTimeConverterReducer = (state = initialState, action) => {
-  console.log(action);
   switch (action.type) {
     case actionTypes.SET_TIME_TYPE: {
       return {
@@ -22,13 +21,6 @@ const UnixTimeConverterReducer = (state = initialState, action) => {
       }
     }
     case actionTypes.SET_TIME_VALUE: {
-      console.log({
-        ...state,
-        time: {
-          ...state.time,
-          type: action.timeType
-        }
-      });
       return {
         ...state,
         time: {

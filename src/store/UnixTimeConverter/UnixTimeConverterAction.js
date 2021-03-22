@@ -1,6 +1,6 @@
 import actionTypes from './UnixTimeConverterActionTypes';
 
-const setTimeValue = (value = 0) => {
+const setTimeValue = (value = '') => {
   return {
     type: actionTypes.SET_TIME_VALUE,
     value
