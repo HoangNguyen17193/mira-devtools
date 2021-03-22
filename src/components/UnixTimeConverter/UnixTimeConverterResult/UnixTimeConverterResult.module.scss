@@ -1,0 +1,15 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.UnixTimeConverterResult {
+  height: 100%;
+  background-color: $content-background-color;
+  color: #fff;
+  padding:0 10px;
+}
+.Input {
+  @include input;
+  &:disabled {
+    @include input;
+  }
+}
