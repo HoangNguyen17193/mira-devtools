@@ -1,0 +1,10 @@
+@import '../../../styles/variables';
+
+.UUIDCard {
+  .ant-card-head {
+    border-bottom: 1px solid $hover-color;
+  }
+  .ant-card-head-title {
+    color: #fff;
+  }
+}

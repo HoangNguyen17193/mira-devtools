@@ -1,0 +1,25 @@
+@import '../../../styles/variables';
+
+.UUIDCard {
+  margin: 20px 50px;
+  background-color: $content-background-color;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.Input {
+  &:disabled {
+    margin: 20px 0;
+    background-color: $primary-color;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+}
+
+.Button {
+  margin: 10px
+}
