@@ -1,0 +1,21 @@
+@import '../../styles/variables';
+
+.UnixTimeConverter {
+  height: 100%;
+  margin-top: 10px;
+}
+.Container {
+  padding: 20px;
+  background-color: $content-background-color;
+  border-radius: 4px;
+  text-align: left;
+}
+.Input {
+  margin: 20px 0;
+  background-color: $primary-color;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  height: 40px;
+  font-size: 1rem;
+}
