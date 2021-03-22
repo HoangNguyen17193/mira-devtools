@@ -1,4 +1,4 @@
-import {v1, v3, v4, v5} from 'uuid';
+import {v1,v4} from 'uuid';
 import actionTypes from './UUIDGeneratorActionTypes';
 
 const initialState = {
@@ -6,7 +6,7 @@ const initialState = {
   uuidV4Value: v4(),
 };
 
-const JSONFormatterReducer = (state = initialState, action) => {
+const UUIDGeneratorReducer = (state = initialState, action) => {
   switch (action.type) {
     case actionTypes.GENERATE_UUID_V1: {
       return {
@@ -26,4 +26,4 @@ const JSONFormatterReducer = (state = initialState, action) => {
   }
 };
 
-export default JSONFormatterReducer;
+export default UUIDGeneratorReducer;
