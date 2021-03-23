@@ -2,7 +2,8 @@
 @import '../../styles/mixins';
 
 .UnixTimeConverter {
-  height: 100%;
+  height: calc(100% - 10px);
+  margin-top: 10px;
 }
 .Container {
   padding: 20px;
