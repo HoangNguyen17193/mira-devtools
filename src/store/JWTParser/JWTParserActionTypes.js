@@ -1,5 +1,6 @@
 const SET_TOKEN = 'SET_TOKEN';
 
-export default {
+const JWTParserActionTypes = {
   SET_TOKEN
 }
+export default JWTParserActionTypes;

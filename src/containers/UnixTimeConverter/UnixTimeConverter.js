@@ -11,7 +11,7 @@ import UnixTimeConverterResult from '../../components/UnixTimeConverter/UnixTime
 
 const {TYPE} = ActionTypes;
 
-export default () => {
+const UnixTimeConverter = () => {
   const time = useSelector(state => state.UnixTimeConverter.time);
   const {
     value, type
@@ -47,3 +47,5 @@ export default () => {
     </div>
   );
 }
+
+export default UnixTimeConverter;

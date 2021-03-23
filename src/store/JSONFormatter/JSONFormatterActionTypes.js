@@ -1,5 +1,6 @@
 const SET_JSON_STRING = 'SET_JSON_STRING';
 
-export default {
+const JSONFormatterActionTypes = {
   SET_JSON_STRING
 }
+export default JSONFormatterActionTypes;

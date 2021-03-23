@@ -6,8 +6,10 @@ const TYPE = {
   millisecond: 'millisecond'
 }
 
-export default {
+const UnixTimeConverterActionTypes = {
   SET_TIME_VALUE,
   SET_TIME_TYPE,
   TYPE
-}
+};
+
+export default UnixTimeConverterActionTypes;
