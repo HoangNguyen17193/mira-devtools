@@ -1,7 +1,7 @@
 @import '../../styles/variables';
 
 .JWTParser {
-  height: 100%;
+  height: calc(100% - 20px);
 }
 .InputContainer {
   background-color: $content-background-color;
