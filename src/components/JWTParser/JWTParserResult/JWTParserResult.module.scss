@@ -11,7 +11,7 @@
   padding: 10px;
   margin-top: 10px;
   background-color: $content-background-color;
-  height: 50%;
+  height: calc(50% - 10px);
   border-radius: 10px;
 }
 
