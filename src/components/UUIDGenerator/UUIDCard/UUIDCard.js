@@ -5,7 +5,7 @@ import {CopyOutlined, RedoOutlined} from '@ant-design/icons';
 import classes from './UUIDCard.module.scss';
 import './UUIDCard.scss';
 
-export default (props) => {
+const UUIDCard = (props) => {
   const copy = () => {
     navigator.clipboard.writeText(props.randomString);
   };
@@ -21,3 +21,5 @@ export default (props) => {
     </Card>
   )
 };
+
+export default UUIDCard;

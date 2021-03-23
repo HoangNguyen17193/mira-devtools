@@ -9,7 +9,7 @@ import classes from './UnixTimeConverterResult.module.scss';
 
 const {TYPE} = ActionTypes;
 
-export default (props) => {
+const UnixTimeConverterResult = (props) => {
   const copy = (text) => {
     navigator.clipboard.writeText(text);
   };
@@ -57,3 +57,5 @@ export default (props) => {
     </div>
   );
 }
+
+export default UnixTimeConverterResult;

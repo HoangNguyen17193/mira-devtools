@@ -6,7 +6,7 @@ import UUIDCard from '../../components/UUIDGenerator/UUIDCard/UUIDCard';
 import classes from './UUIDGenerator.module.scss';
 import {generateUUIDV1, generateUUIDV4} from '../../store/UUIDGenerator/UUIDGeneratorAction';
 
-export default () => {
+const UUIDGenerator = () => {
   const uuidV1Value = useSelector(state => state.UUIDGenerator.uuidV1Value);
   const uuidV4Value = useSelector(state => state.UUIDGenerator.uuidV4Value);
   const dispatch = useDispatch();
@@ -30,3 +30,5 @@ export default () => {
       </Row>
     </div>);
 }
+
+export default UUIDGenerator;

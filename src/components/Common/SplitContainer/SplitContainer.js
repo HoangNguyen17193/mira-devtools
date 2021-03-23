@@ -4,7 +4,7 @@ import Split from 'react-split';
 import './SplitContainer.scss';
 import classes from './SplitContainer.module.scss';
 
-export default (props) => {
+const SplitContainer = (props) => {
   return (
     <Split className={`${classes.SplitContainer} SplitContainer`}
            sizes={props.sizes}
@@ -17,3 +17,5 @@ export default (props) => {
     </Split>
   )
 };
+
+export default SplitContainer;

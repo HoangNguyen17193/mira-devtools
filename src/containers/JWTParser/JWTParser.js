@@ -10,7 +10,7 @@ import JWtParserResult from '../../components/JWTParser/JWTParserResult/JWTParse
 
 const {TextArea} = Input;
 
-export default () => {
+const JWTParser = () => {
   const token = useSelector(state => state.JWTParser.token);
   const dispatch = useDispatch();
 
@@ -32,3 +32,5 @@ export default () => {
     </div>
   );
 }
+
+export default JWTParser;

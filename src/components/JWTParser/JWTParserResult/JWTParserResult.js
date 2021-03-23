@@ -22,7 +22,7 @@ function parseToken(token) {
     return {}
   }
 }
-export default (props) => {
+const JWTParserResult = (props) => {
   const {header, payload} = parseToken(props.token);
   const InvalidTokenView = <div className={classes.InvalidTokenLabel}>Invalid Token</div>;
   const HeaderView = header ? <JsonView jsonString={header} /> : InvalidTokenView;
@@ -40,3 +40,5 @@ export default (props) => {
     </div>
   )
 };
+
+export default JWTParserResult;
