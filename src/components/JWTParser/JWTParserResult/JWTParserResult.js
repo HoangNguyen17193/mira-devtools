@@ -25,8 +25,8 @@ function parseToken(token) {
 const JWTParserResult = (props) => {
   const {header, payload} = parseToken(props.token);
   const InvalidTokenView = <div className={classes.InvalidTokenLabel}>Invalid Token</div>;
-  const HeaderView = header ? <JsonView jsonString={header} /> : InvalidTokenView;
-  const PayloadView = payload ? <JsonView jsonString={payload} /> : InvalidTokenView;
+  const HeaderView = header ? <JsonView jsonString={header} className={classes.JsonView}/> : InvalidTokenView;
+  const PayloadView = payload ? <JsonView jsonString={payload} className={classes.JsonView}/> : InvalidTokenView;
   return (
     <div className={classes.JWTParserResult}>
         <div className={classes.JWTParserResultItem}>
