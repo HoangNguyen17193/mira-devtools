@@ -28,7 +28,7 @@ const JsonView = (props) => {
   const result = isValidJsonString(jsonString) ? JSON.stringify(JSON.parse(jsonString), null, 4)
     : 'Syntax Error';
   return (
-    <div className={classes.JsonView}>
+    <div className={`${classes.JsonView} ${props.className} || ''`}>
       <SyntaxHighlighter language='json' style={customStyle} showLineNumbers={true}>
         {result || ''}
       </SyntaxHighlighter>

@@ -13,6 +13,11 @@
   background-color: $content-background-color;
   height: calc(50% - 10px);
   border-radius: 10px;
+  overflow: hidden;
+}
+
+.JsonView {
+  height: calc(100% - 25px);
 }
 
 .Header {
