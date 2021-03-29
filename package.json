@@ -2,7 +2,7 @@
   "name": "mira-devtools",
   "main": "electron/main.js",
   "homepage": "./",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "author": {
     "name": "Hoang Nguyen(Tino)",
@@ -52,9 +52,12 @@
     "productName": "Mira Devtools",
     "copyright": "Copyright © 2021 ${author}",
     "mac": {
-      "category": "public.app-category.utilities"
+      "category": "public.app-category.utilities",
+      "icon": "./public/icon.icns"
     },
-    "win": {},
+    "win": {
+      "icon": "./public/logo.png"
+    },
     "files": [
       "build/**/*",
       "node_modules/**/*",
