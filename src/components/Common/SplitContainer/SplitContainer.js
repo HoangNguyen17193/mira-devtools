@@ -10,7 +10,7 @@ const SplitContainer = (props) => {
            sizes={props.sizes}
            cursor="col-resize"
            gutterSize={10}
-           minSize={300}
+           minSize={370}
            expandToMin={true}
     >
       {props.children}
